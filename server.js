@@ -11,6 +11,10 @@ const PORT = process.env.PORT || 3000;
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+  res.send("welcome to hotel project")
+});
+
 //import personRoutes
 const personRoutes = require('./routes/personRoutes');
 //import menuRoutes
